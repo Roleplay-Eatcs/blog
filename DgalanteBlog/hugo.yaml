@@ -1,0 +1,57 @@
+baseURL: https://dgalante.com/
+languageCode: en-us
+title: DG's Blog
+theme: PaperMod
+
+pagination:
+  pagerSize: 10
+
+params:
+  env: production
+  description: "Personal blog - projects, experience, and thoughts"
+  author: DG
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  homeInfoParams:
+    Title: "Hey there"
+    Content: "Welcome to my blog. I write about my projects and experience."
+  socialIcons:
+    - name: github
+      url: "https://github.com/Roleplay-Eatcs"
+    - name: rss
+      url: "index.xml"
+  cover:
+    responsiveImages: true
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
